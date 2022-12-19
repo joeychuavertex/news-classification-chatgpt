@@ -1,3 +1,5 @@
 openai~=0.25.0
 requests~=2.28.1
 beautifulsoup4~=4.11.1
+Newspaper3k
+streamlit~=1.16.0
