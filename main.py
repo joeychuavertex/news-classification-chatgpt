@@ -3,7 +3,9 @@ import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 from newspaper import Article
+import nltk
 
+nltk.download('punkt')
 
 # Use your OpenAI API key to access GPT-3
 openai.api_key = st.secrets["openai_api_key"]
@@ -25,6 +27,7 @@ def extract_article_content(url):
         article_text = "Unable to extract article text."
 
     return article_text
+
 
 # Use Streamlit to build the web app
 st.title("News Classification App")
